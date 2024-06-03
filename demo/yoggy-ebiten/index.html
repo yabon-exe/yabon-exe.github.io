@@ -55,6 +55,18 @@
             <h1>レスポンシブテンプレート</h1>
             <p>このテンプレートはPCおよびスマートフォンの両方に対応しています。</p>
         </div>
+  <script>
+    var importObject = {};
+    WebAssembly.instantiateStreaming(
+      fetch('chainfire.wasm'), importObject
+    ).then(obj => a = obj);
+  </script>
+    <script>
+        const go = new Go();
+        WebAssembly.instantiateStreaming(fetch("main.wasm"), go.importObject).then((result) => {
+            go.run(result.instance);
+        });
+    </script>
     </main>
     <footer>
         固定フッター
