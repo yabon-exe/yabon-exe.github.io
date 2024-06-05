@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <script src="wasm_exec.js"></script>
 <script>
+alert(1111)
 // Polyfill
 if (!WebAssembly.instantiateStreaming) {
     WebAssembly.instantiateStreaming = async (resp, importObject) => {
